@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_kelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15sdp">
+
+            <LinearLayout
+                android:id="@+id/ll_judul_kelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_nama_pelajaran"
+                    style="@style/FontBodyTextBlackBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pendidikan Kewarnegaraan" />
+
+                <TextView
+                    android:id="@+id/tv_nama_kelas"
+                    style="@style/FontBodyTextBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="Kelas 2 - Abu Bakar" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_jadwal_kelas"
+                style="@style/FontBodyTextBlackBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/ll_judul_kelas"
+                android:text="Senin, 07.00 - 08.40"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

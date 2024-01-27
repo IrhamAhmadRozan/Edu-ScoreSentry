@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.loginas.LoginAsActivity">
+
+    <ImageView
+        android:id="@+id/iv_edu_scoresentry"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        android:src="@drawable/ic_logo2" />
+
+    <TextView
+        android:id="@+id/tv_login_as"
+        style="@style/FontTitlePrimaryBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_edu_scoresentry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="Login Sebagai" />
+
+    <RelativeLayout
+        android:id="@+id/rl_guru_button"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/bg_button"
+        android:clickable="true"
+        android:elevation="@dimen/_3sdp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+        <TextView
+            android:id="@+id/tv_guru"
+            style="@style/FontButtonWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="Guru" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_siswa_button"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_guru_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/bg_button"
+        android:clickable="true"
+        android:elevation="@dimen/_3sdp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+        <TextView
+            android:id="@+id/tv_siswa"
+            style="@style/FontButtonWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="Siswa" />
+    </RelativeLayout>
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/rl_wali_siswa_button"-->
+    <!--        android:layout_width="@dimen/_200sdp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/rl_siswa_button"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginStart="@dimen/_20sdp"-->
+    <!--        android:layout_marginTop="@dimen/_10sdp"-->
+    <!--        android:layout_marginEnd="@dimen/_20sdp"-->
+    <!--        android:layout_marginBottom="@dimen/_20sdp"-->
+    <!--        android:background="@drawable/bg_button"-->
+    <!--        android:clickable="true"-->
+    <!--        android:elevation="@dimen/_3sdp"-->
+    <!--        android:focusable="true">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_wali_siswa"-->
+    <!--            style="@style/FontButtonWhite"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_margin="@dimen/_10sdp"-->
+    <!--            android:text="Wali Siswa" />-->
+    <!--    </RelativeLayout>-->
+
+</RelativeLayout>

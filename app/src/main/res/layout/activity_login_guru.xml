@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.login.LoginGuruActivity">
+
+    <ImageView
+        android:id="@+id/iv_edu_scoresentry_guru"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/ic_logo2" />
+
+    <TextView
+        android:id="@+id/tv_title_guru"
+        style="@style/FontTitlePrimaryBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_edu_scoresentry_guru"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="Edu ScoreSentry" />
+
+    <LinearLayout
+        android:id="@+id/ll_form_login_guru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_guru"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_nip_guru"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:hint="NIP"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorPrimary"
+            app:startIconDrawable="@drawable/ic_user"
+            app:startIconTint="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/FontBodyDarkGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_password_guru"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:hint="Password"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/colorPrimary"
+            app:endIconTintMode="src_atop"
+            app:startIconDrawable="@drawable/ic_lock"
+            app:startIconTint="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/FontBodyDarkGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_lupa_kata_sandi_guru"
+            style="@style/FontSmallTextPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Lupa Kata sandi?" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_login_button_guru"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_form_login_guru"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/bg_button"
+        android:clickable="true"
+        android:elevation="@dimen/_3sdp"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+        <TextView
+            android:id="@+id/tv_login_guru"
+            style="@style/FontButtonWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Login" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_guru"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_login_guru"
+            android:indeterminateTint="@color/colorWhite"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_pusat_bantuan_guru"
+        style="@style/FontBodyTextPrimaryBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Pusat Bantuan" />
+</RelativeLayout>

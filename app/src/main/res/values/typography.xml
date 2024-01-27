@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FontTitleDarkGrey">
+        <item name="android:textColor">@color/colorDarkGrey</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="FontButtonDarkGrey">
+        <item name="android:textColor">@color/colorDarkGrey</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="FontBodyDarkGrey">
+        <item name="android:textColor">@color/colorDarkGrey</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontBodyDarkGreyBold">
+        <item name="android:textColor">@color/colorDarkGrey</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontSmallTextDarkGrey">
+        <item name="android:textColor">@color/colorDarkGrey</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontTitleGrey">
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="FontButtonGrey">
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="FontBodyGrey">
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontSmallTextGrey">
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontTitlePrimary">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontTitlePrimaryBold">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="FontButtonPrimary">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontBodyTextPrimary">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontBodyTextPrimaryBold">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontSmallTextPrimary">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontTitleWhite">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontTitleWhiteBold">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="FontButtonWhite">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontBodyTextWhite">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontBodyTextWhiteBold">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontSmallTextWhite">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontTitleBlack">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontTitleBlackBold">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="FontButtonBlack">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontBodyTextBlack">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontBodyTextBlackBold">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="FontSmallTextBlack">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+</resources>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.home.HomeFragment">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/layout_toolbar_main" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/swipe_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_main">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_berita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/_20sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_berita_harian"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_image_profile"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_55sdp"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:src="@drawable/ic_user"
+                            app:civ_border_color="@color/colorPrimary"
+                            app:civ_border_width="1dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iv_image_profile"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tv_profile_name"
+                                style="@style/FontTitleBlackBold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Guru or Siswa"
+                                android:textSize="@dimen/_14ssp" />
+
+                            <TextView
+                                android:id="@+id/tv_profile_nipornisn"
+                                style="@style/FontTitleBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:text="nip or nisn"
+                                android:textSize="@dimen/_11ssp" />
+
+                            <TextView
+                                android:id="@+id/tv_notelp"
+                                style="@style/FontTitleBlack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:text="nip or nisn"
+                                android:textSize="@dimen/_11ssp" />
+
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_berita"
+                android:orientation="vertical"
+                android:padding="@dimen/_20sdp">
+
+                <TextView
+                    style="@style/FontBodyTextBlackBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="Menu"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_daftar_kelas"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        app:cardCornerRadius="@dimen/_15sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:src="@drawable/ic_list"
+                                app:tint="@color/colorBlack" />
+
+                            <TextView
+                                style="@style/FontBodyTextBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_6sdp"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:layout_marginEnd="@dimen/_6sdp"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:text="Daftar Kelas" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/FontBodyTextBlackBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="Bantuan"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_hubungi_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:cardCornerRadius="@dimen/_15sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_button"
+                        android:elevation="@dimen/_3sdp">
+
+                        <ImageView
+                            android:id="@+id/iv_ic1"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/ic_contact_support"
+                            android:backgroundTint="@color/colorWhite" />
+
+                        <TextView
+                            style="@style/FontButtonWhite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_toEndOf="@+id/iv_ic1"
+                            android:text="Hubungi Admin" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/ic_arrow_forward"
+                            android:backgroundTint="@color/colorWhite" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_terkait_sekolah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:cardCornerRadius="@dimen/_15sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_button"
+                        android:elevation="@dimen/_3sdp">
+
+                        <ImageView
+                            android:id="@+id/iv_ic2"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/ic_school"
+                            android:backgroundTint="@color/colorWhite" />
+
+                        <TextView
+                            style="@style/FontButtonWhite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_toEndOf="@+id/iv_ic2"
+                            android:text="Terkait Sekolah" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/ic_arrow_forward"
+                            android:backgroundTint="@color/colorWhite" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

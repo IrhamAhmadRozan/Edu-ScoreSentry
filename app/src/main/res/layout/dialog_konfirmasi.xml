@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundTransparent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_25sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_icon_konfirmasi"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_error"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_desc_konfirmasi"
+                style="@style/FontBodyTextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_icon_konfirmasi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Lorem Ipsum has been the industry's standard dummy text ever"
+                android:textSize="@dimen/_13ssp" />
+
+            <LinearLayout
+                android:id="@+id/ll_one_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_desc_konfirmasi"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btn_submit_act_one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Submit"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_two_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_desc_konfirmasi"
+                android:background="@color/colorLightGrey"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btn_batal_konfirmasi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:backgroundTint="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Batal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack" />
+
+                <Button
+                    android:id="@+id/btn_submit_konfirmasi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_button_flat"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Keluar"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
